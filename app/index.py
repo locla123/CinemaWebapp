@@ -136,10 +136,5 @@ def detail():
     return render_template('detail.html', movie=movie)
 
 
-@app.route('booking-tickets', methods=['POST', 'GET'])
-def book():
-    return render_template('index.html')
-
-
 if __name__ == '__main__':
     app.run(debug=True)
